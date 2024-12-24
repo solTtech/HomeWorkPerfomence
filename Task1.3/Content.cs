@@ -16,7 +16,7 @@ namespace Task1._3
                 if (content != null)
                     return content;
                 else
-                    return "Зміст відсутній";
+                    return "Зміст відсутній.";
             }
             set
             {
@@ -27,6 +27,7 @@ namespace Task1._3
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine(Content1);
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }

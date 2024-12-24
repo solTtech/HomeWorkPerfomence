@@ -27,6 +27,7 @@ namespace Task1._3
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(Author1);
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }

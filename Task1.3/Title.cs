@@ -17,7 +17,7 @@ namespace Task1._3
                 if (title != null)
                     return title;
                 else
-                    return "Назва книги відсутня";
+                    return "Назва книги відсутня.";
             }
             set
             {
@@ -28,6 +28,7 @@ namespace Task1._3
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine(Title1);
+            Console.ForegroundColor = ConsoleColor.Gray;
         }
     }
 }
