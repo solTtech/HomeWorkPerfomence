@@ -6,9 +6,9 @@
         {
             Store store = new Store(3);
 
-            store.AddArticle(0, new Article("Laptop", "TechStore", 25000));
+            store.AddArticle(0, new Article("Car", "AvtoWorld", 505000));
             store.AddArticle(1, new Article("Smartphone", "MobileShop", 15000));
-            store.AddArticle(2, new Article("Headphones", "AudioWorld", 3000));
+            store.AddArticle(2, new Article("SSD", "MultiStore", 3000));
 
             Console.WriteLine("Enter article index (0-2):");
             if (int.TryParse(Console.ReadLine(), out int index))
