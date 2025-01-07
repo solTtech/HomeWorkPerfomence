@@ -5,13 +5,13 @@
         struct Train
         {
             public string Destination { get; set; }
-            public int TrainNumber { get; set; }
-            public DateTime ArrivalTime { get; set; }
+            public int Number { get; set; }
+            public DateTime Time { get; set; }
         }
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            const int trainCount = 1;
+            const int trainCount = 8;
             Train[] trains = new Train[trainCount];
 
             for (int i = 0; i < trainCount; i++)
@@ -29,26 +29,26 @@
                 } while (string.IsNullOrWhiteSpace(destination));
 
                 Console.Write("Номер поїзда: ");
-                int trainNumber;
-                while (!int.TryParse(Console.ReadLine(), out trainNumber))
+                int Number;
+                while (!int.TryParse(Console.ReadLine(), out Number))
                 {
                     Console.WriteLine("Номер поїзда має бути числом. Спробуйте ще раз:");
                 }
 
                 Console.Write("Час відправлення (у форматі hh:mm): ");
-                DateTime arrivalTime;
-                while (!DateTime.TryParse(Console.ReadLine(), out arrivalTime))
+                DateTime Time;
+                while (!DateTime.TryParse(Console.ReadLine(), out Time))
                 {
                     Console.WriteLine("Некоректний формат часу. Спробуйте ще раз:");
                 }
                 trains[i] = new Train
                 {
                     Destination = destination,
-                    TrainNumber = trainNumber,
-                    ArrivalTime = arrivalTime
+                    Number = Number,
+                    Time = Time
                 };
             }
-            Array.Sort(trains, (train1, train2) => train1.TrainNumber.CompareTo(train2.TrainNumber));
+            Array.Sort(trains, (train1, train2) => train1.Number.CompareTo(train2.Number));
 
             Console.Write("Введіть номер поїзда для пошуку: ");
             int searchNumber;
@@ -58,7 +58,7 @@
             Train? foundTrain = null;
             foreach (var train in trains)
             {
-                if (train.TrainNumber == searchNumber)
+                if (train.Number == searchNumber)
                 {
                     foundTrain = train;
                     break;
@@ -70,7 +70,7 @@
                 var train = foundTrain.Value;
                 Console.WriteLine($"Інформація про поїзд #{searchNumber}:");
                 Console.WriteLine($"Пункт призначення: {train.Destination}");
-                Console.WriteLine($"Час відправлення: {train.ArrivalTime:hh:mm}");
+                Console.WriteLine($"Час відправлення: {train.Time:hh:mm}");
             }
             else
             {
