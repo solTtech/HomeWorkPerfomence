@@ -53,7 +53,8 @@
             Console.Write("Введіть номер поїзда для пошуку: ");
             int searchNumber;
             if (int.TryParse(Console.ReadLine(), out searchNumber));
-            else Console.WriteLine("Номер поїзда має бути числом. Спробуйте ще раз:");
+            else 
+                Console.WriteLine("Номер поїзда має бути числом. Спробуйте ще раз:");
 
             Train? foundTrain = null;
             foreach (var train in trains)
