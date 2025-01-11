@@ -42,8 +42,6 @@
                 };
             }
 
-            Console.WriteLine("Програма для виконання арифметичних дій за допомогою делегата.");
-
             while (true)
             {
                 Console.WriteLine("\nОберіть дію (Add, Subtract, Multiply, Divide) або введіть 'exit' для виходу:");
