@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -45,6 +46,5 @@ namespace Task10._2
             newArr[arr.Length] = value;
             arr = newArr;
         }
-
     }
 }
