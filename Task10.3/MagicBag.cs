@@ -35,6 +35,7 @@ namespace Task10._3
             // Генеруємо новий подарунок
             var newGift = _giftGenerator(creature);
             _gifts[creatureType] = (currentDate, newGift);
+            Console.ResetColor();
             Console.WriteLine($"Істота {creatureType} отримує унікальний подарунок:");
             return newGift;
         }

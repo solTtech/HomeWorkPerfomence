@@ -10,7 +10,6 @@
             // Функція генерації подарунків
             var bag = new MagicBag<ICreature>(creature =>
             {
-                Console.ResetColor();
                 return $"{Guid.NewGuid()}";
             });
 
