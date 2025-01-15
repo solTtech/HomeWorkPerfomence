@@ -36,6 +36,7 @@ namespace Task8._2
                 case Colors.Magenta: return ConsoleColor.Magenta;
                 case Colors.Yellow: return ConsoleColor.Yellow;
                 case Colors.Cyan: return ConsoleColor.Cyan;
+                case Colors.Purple: return ConsoleColor.DarkMagenta;
                 case Colors.White: return ConsoleColor.White;
                 default: return ConsoleColor.White;
 

@@ -14,6 +14,7 @@ namespace Task8._2
         Blue,
         Cyan,
         Magenta,
-        White
+        White,
+        Purple
     }
 }

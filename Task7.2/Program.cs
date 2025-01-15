@@ -1,4 +1,6 @@
-﻿namespace Task7._2
+﻿using System.Text;
+
+namespace Task7._2
 {
     internal class Program
     {
@@ -10,8 +12,8 @@
         }
         static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.UTF8;
-            const int trainCount = 8;
+            Console.OutputEncoding = Encoding.Unicode;
+            const int trainCount = 1;
             Train[] trains = new Train[trainCount];
 
             for (int i = 0; i < trainCount; i++)
