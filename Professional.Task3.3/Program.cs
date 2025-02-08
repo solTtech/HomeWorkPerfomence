@@ -8,7 +8,7 @@ namespace Professional.Task3._3
         {
             Console.Write("Введіть назву файлу для пошуку: ");
             string fileName = Console.ReadLine();
-            Console.Write("Введіть диск для пошуку (наприклад, C:\\): ");
+            Console.Write("Введіть диск для пошуку (наприклад, D:\\): ");
             string drive = Console.ReadLine();
 
             string foundFile = FindFile(drive, fileName);
